@@ -37,10 +37,10 @@ const Todolist = ()=>{
 
     return(
         <div>
-            <ul>
+            <ul className="todo-list-wrapper">
 {Todoo.map((todo)=>{ 
                 return(
-                    <li>{todo.message} <AiFillDelete onClick={()=> handleDelete(todo._id)}/></li>
+                    <li className="todo-list" key={todo._id}>{todo.message} <AiFillDelete className="tododelete-btn" size={20} onClick={()=> handleDelete(todo._id)}/></li>
                 )
                })}
             </ul>

@@ -5,11 +5,11 @@ import './App.css'
 
 const App = ()=>{
   return(
-    <>
+    <div className="main">
     <Header />
     <Addtodo />
     <Todolist />
-    </>
+    </div>
   )
 }
 

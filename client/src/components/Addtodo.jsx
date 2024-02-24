@@ -21,8 +21,8 @@ const Addtodo = ()=>{
     }
     return(
         <div>
-            <input type="text" value={message} onChange={(e) => setMessage(e.target.value) } placeholder="add task here..." />
-            <button onClick={createTodo}>Add Todo</button>
+            <input type="text" className="todo-input" value={message} onChange={(e) => setMessage(e.target.value) } placeholder="type in your todo to add..." />
+            <button className="todo-btn" onClick={createTodo}>Add Todo</button>
         </div>
 
     )
